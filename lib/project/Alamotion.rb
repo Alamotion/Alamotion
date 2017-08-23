@@ -1,0 +1,4 @@
+class Alamotion
+
+end
+
