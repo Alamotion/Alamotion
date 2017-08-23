@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Alamofire for RubyMotion}
   spec.summary       = %q{Alamofire for RubyMotion}
   spec.homepage      = "https://github.com/Alamotion/Alamotion"
-  spec.license       = ""
+  spec.license       = "MIT"
 
   files = []
   files << 'README.md'
@@ -19,5 +19,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "motion-cocoapods", ">= 1.9.0"
+  spec.add_dependency "motion-require", ">= 0.2"
+  spec.add_development_dependency 'webstub', "~> 1.1"
   spec.add_development_dependency "rake"
 end
